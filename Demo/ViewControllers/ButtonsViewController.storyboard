@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rsf-Go-3tM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Buttons-->
+        <scene sceneID="l4x-fi-Cvp">
+            <objects>
+                <viewController title="Buttons" id="rsf-Go-3tM" customClass="ButtonsViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wP2-BY-tqH"/>
+                        <viewControllerLayoutGuide type="bottom" id="262-xM-LAj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W0o-mw-NZr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zOe-eY-Z9D">
+                                <rect key="frame" x="140" y="40" width="95" height="29"/>
+                                <segments>
+                                    <segment title="Code"/>
+                                    <segment title="Xib"/>
+                                </segments>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-fa-qM0">
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                                <connections>
+                                    <segue destination="a0p-hk-oVd" kind="embed" id="2oA-vV-cZI"/>
+                                </connections>
+                            </containerView>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-H4-DP4">
+                                <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                                <connections>
+                                    <segue destination="SdY-tK-UhB" kind="embed" id="Go3-zd-q89"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="262-xM-LAj" firstAttribute="top" secondItem="SUN-fa-qM0" secondAttribute="bottom" id="2st-tU-Nwt"/>
+                            <constraint firstItem="zOe-eY-Z9D" firstAttribute="centerX" secondItem="W0o-mw-NZr" secondAttribute="centerX" id="7w6-FL-Vdd"/>
+                            <constraint firstItem="zOe-eY-Z9D" firstAttribute="top" secondItem="wP2-BY-tqH" secondAttribute="bottom" constant="20" id="DZF-8E-bz2"/>
+                            <constraint firstItem="262-xM-LAj" firstAttribute="top" secondItem="jd8-H4-DP4" secondAttribute="bottom" id="chg-wS-VV1"/>
+                            <constraint firstItem="jd8-H4-DP4" firstAttribute="leading" secondItem="W0o-mw-NZr" secondAttribute="leading" id="eWU-8j-prK"/>
+                            <constraint firstItem="SUN-fa-qM0" firstAttribute="leading" secondItem="W0o-mw-NZr" secondAttribute="leading" id="etX-o4-qgD"/>
+                            <constraint firstAttribute="trailing" secondItem="SUN-fa-qM0" secondAttribute="trailing" id="fgU-G3-vw5"/>
+                            <constraint firstItem="jd8-H4-DP4" firstAttribute="top" secondItem="zOe-eY-Z9D" secondAttribute="bottom" constant="20" id="r3E-qB-UM3"/>
+                            <constraint firstAttribute="trailing" secondItem="jd8-H4-DP4" secondAttribute="trailing" id="rsR-S2-J58"/>
+                            <constraint firstItem="SUN-fa-qM0" firstAttribute="top" secondItem="zOe-eY-Z9D" secondAttribute="bottom" constant="20" id="weI-md-LDD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="byCodeView" destination="SUN-fa-qM0" id="9jB-oM-Xhv"/>
+                        <outlet property="byXibView" destination="jd8-H4-DP4" id="Qr6-uZ-Xd1"/>
+                        <outlet property="howToSegment" destination="zOe-eY-Z9D" id="DSC-BS-G2i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6k3-Si-LGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="222"/>
+        </scene>
+        <!--Buttons By Code View Controller-->
+        <scene sceneID="cPi-Ok-d42">
+            <objects>
+                <viewController id="a0p-hk-oVd" customClass="ButtonsByCodeViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mC7-SC-bha"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cbb-R9-CQD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pbl-kP-jwl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnD-rg-BUc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                                <subviews>
+                                    <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fqp-1d-N4r">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCz-Le-Cyn">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VCz-Le-Cyn" firstAttribute="centerX" secondItem="Fqp-1d-N4r" secondAttribute="centerX" id="Fuf-Hg-FKd"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Fqp-1d-N4r" secondAttribute="trailing" id="8um-iU-85L"/>
+                                    <constraint firstItem="Fqp-1d-N4r" firstAttribute="width" secondItem="gnD-rg-BUc" secondAttribute="width" id="Kc8-Jj-cPI"/>
+                                    <constraint firstItem="Fqp-1d-N4r" firstAttribute="top" secondItem="gnD-rg-BUc" secondAttribute="top" id="SgO-Jz-125"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fqp-1d-N4r" secondAttribute="bottom" id="hBh-eY-BsP"/>
+                                    <constraint firstItem="Fqp-1d-N4r" firstAttribute="leading" secondItem="gnD-rg-BUc" secondAttribute="leading" id="oe1-2l-3Ws"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gnD-rg-BUc" secondAttribute="bottom" id="2HM-zZ-Xyf"/>
+                            <constraint firstAttribute="trailing" secondItem="gnD-rg-BUc" secondAttribute="trailing" id="7Af-Rp-2hP"/>
+                            <constraint firstItem="gnD-rg-BUc" firstAttribute="top" secondItem="pbl-kP-jwl" secondAttribute="top" id="QzZ-0Z-8Id"/>
+                            <constraint firstItem="gnD-rg-BUc" firstAttribute="leading" secondItem="pbl-kP-jwl" secondAttribute="leading" id="g4S-8K-NWT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgd-mv-Bnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="-158"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a4m-lJ-de5">
+            <objects>
+                <viewController id="SdY-tK-UhB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HeZ-Jk-UYr"/>
+                        <viewControllerLayoutGuide type="bottom" id="UlG-C5-nax"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Or-0R-Tia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCt-iY-zcA">
+                                <rect key="frame" x="20" y="0.0" width="335" height="579"/>
+                                <subviews>
+                                    <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mbp-q2-uOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="751"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Xib" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-DW-maY">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium Buttons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sho-E2-T1g">
+                                                <rect key="frame" x="0.0" y="30.5" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ch-Pf-VU8">
+                                                <rect key="frame" x="0.0" y="61" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5K-1O-fso" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="106.5" y="10" width="122" height="40"/>
+                                                        <state key="normal" title="Medium Blue"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="V5K-1O-fso" firstAttribute="centerY" secondItem="9Ch-Pf-VU8" secondAttribute="centerY" id="1bB-bw-dfj"/>
+                                                    <constraint firstAttribute="height" constant="60" id="bY2-IA-e4g"/>
+                                                    <constraint firstItem="V5K-1O-fso" firstAttribute="centerX" secondItem="9Ch-Pf-VU8" secondAttribute="centerX" id="jOQ-Z9-l6B"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvr-U7-INb">
+                                                <rect key="frame" x="0.0" y="131" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmF-ae-aL9" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="77.5" y="10" width="180" height="40"/>
+                                                        <state key="normal" title="Medium Blue Shadow"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="86b-QX-aXk"/>
+                                                    <constraint firstItem="QmF-ae-aL9" firstAttribute="centerY" secondItem="Kvr-U7-INb" secondAttribute="centerY" id="eCV-Rm-pCF"/>
+                                                    <constraint firstItem="QmF-ae-aL9" firstAttribute="centerX" secondItem="Kvr-U7-INb" secondAttribute="centerX" id="wgH-Rd-wvU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ur-ly-5mY">
+                                                <rect key="frame" x="0.0" y="201" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3o-MV-oMX" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="75" y="10" width="185" height="40"/>
+                                                        <state key="normal" title="Medium Blue Disabled"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="Z3o-MV-oMX" firstAttribute="centerX" secondItem="9ur-ly-5mY" secondAttribute="centerX" id="F2r-LK-wfq"/>
+                                                    <constraint firstAttribute="height" constant="60" id="HzN-Sj-GRW"/>
+                                                    <constraint firstItem="Z3o-MV-oMX" firstAttribute="centerY" secondItem="9ur-ly-5mY" secondAttribute="centerY" id="gFr-dA-kuB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSN-EN-cHo">
+                                                <rect key="frame" x="0.0" y="271" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-U8-8oG" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="102" y="10" width="131" height="40"/>
+                                                        <state key="normal" title="Medium White"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="cYH-U8-8oG" firstAttribute="centerX" secondItem="eSN-EN-cHo" secondAttribute="centerX" id="JfI-yE-gmB"/>
+                                                    <constraint firstAttribute="height" constant="60" id="SFp-g5-Ox0"/>
+                                                    <constraint firstItem="cYH-U8-8oG" firstAttribute="centerY" secondItem="eSN-EN-cHo" secondAttribute="centerY" id="fy6-YQ-sdY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REf-2k-9A0">
+                                                <rect key="frame" x="0.0" y="341" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-4y-uBK" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="72.5" y="10" width="190" height="40"/>
+                                                        <state key="normal" title="Medium White Shadow"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="43O-Sb-6WX"/>
+                                                    <constraint firstItem="Tlh-4y-uBK" firstAttribute="centerX" secondItem="REf-2k-9A0" secondAttribute="centerX" id="fhG-Lo-eVa"/>
+                                                    <constraint firstItem="Tlh-4y-uBK" firstAttribute="centerY" secondItem="REf-2k-9A0" secondAttribute="centerY" id="yx1-kj-ro2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlQ-7W-qxB">
+                                                <rect key="frame" x="0.0" y="411" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TO9-il-5UY" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="70" y="10" width="195" height="40"/>
+                                                        <state key="normal" title="Medium White Disabled"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="TO9-il-5UY" firstAttribute="centerY" secondItem="DlQ-7W-qxB" secondAttribute="centerY" id="piZ-7P-jaT"/>
+                                                    <constraint firstAttribute="height" constant="60" id="tMV-IM-8fm"/>
+                                                    <constraint firstItem="TO9-il-5UY" firstAttribute="centerX" secondItem="DlQ-7W-qxB" secondAttribute="centerX" id="x8P-N0-bPZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q25-42-zOO">
+                                                <rect key="frame" x="0.0" y="481" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMh-rI-Crb" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="73" y="10" width="189" height="40"/>
+                                                        <state key="normal" title="Medium Blue Bordered"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="dMh-rI-Crb" firstAttribute="centerY" secondItem="q25-42-zOO" secondAttribute="centerY" id="41L-Ah-pKw"/>
+                                                    <constraint firstItem="dMh-rI-Crb" firstAttribute="centerX" secondItem="q25-42-zOO" secondAttribute="centerX" id="Pts-zj-fhk"/>
+                                                    <constraint firstAttribute="height" constant="60" id="vVk-e6-zOC"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtY-lm-BiV">
+                                                <rect key="frame" x="0.0" y="551" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-Vd-hdD" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="41" y="10" width="253" height="40"/>
+                                                        <state key="normal" title="Medium Blue Bordered Disabled"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="gMM-Vd-hdD" firstAttribute="centerX" secondItem="DtY-lm-BiV" secondAttribute="centerX" id="SGX-dH-wLJ"/>
+                                                    <constraint firstAttribute="height" constant="60" id="gT0-zR-m66"/>
+                                                    <constraint firstItem="gMM-Vd-hdD" firstAttribute="centerY" secondItem="DtY-lm-BiV" secondAttribute="centerY" id="wmy-zo-dj4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Iq-34-uDK">
+                                                <rect key="frame" x="0.0" y="621" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSu-j3-0Nu" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="68" y="10" width="199" height="40"/>
+                                                        <state key="normal" title="Medium White Bordered"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="MUu-u1-NC0"/>
+                                                    <constraint firstItem="eSu-j3-0Nu" firstAttribute="centerY" secondItem="7Iq-34-uDK" secondAttribute="centerY" id="Pst-MA-mfr"/>
+                                                    <constraint firstItem="eSu-j3-0Nu" firstAttribute="centerX" secondItem="7Iq-34-uDK" secondAttribute="centerX" id="cTq-uc-S3S"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVX-C3-PQZ">
+                                                <rect key="frame" x="0.0" y="691" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scK-5a-JBG" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="36.5" y="10" width="262" height="40"/>
+                                                        <state key="normal" title="Medium White Bordered Disabled"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="scK-5a-JBG" firstAttribute="centerX" secondItem="kVX-C3-PQZ" secondAttribute="centerX" id="ZKZ-42-pL1"/>
+                                                    <constraint firstAttribute="height" constant="60" id="mHw-E0-J1L"/>
+                                                    <constraint firstItem="scK-5a-JBG" firstAttribute="centerY" secondItem="kVX-C3-PQZ" secondAttribute="centerY" id="qDK-y3-6oM"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aeN-DW-maY" firstAttribute="centerX" secondItem="mbp-q2-uOD" secondAttribute="centerX" id="TmW-iD-hEq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mbp-q2-uOD" firstAttribute="centerX" secondItem="PCt-iY-zcA" secondAttribute="centerX" id="75r-bQ-aeA"/>
+                                    <constraint firstItem="mbp-q2-uOD" firstAttribute="leading" secondItem="PCt-iY-zcA" secondAttribute="leading" id="VvN-xI-zx9"/>
+                                    <constraint firstAttribute="bottom" secondItem="mbp-q2-uOD" secondAttribute="bottom" id="Wzi-xx-rNP"/>
+                                    <constraint firstItem="mbp-q2-uOD" firstAttribute="top" secondItem="PCt-iY-zcA" secondAttribute="top" id="dfM-lO-fTM"/>
+                                    <constraint firstItem="mbp-q2-uOD" firstAttribute="width" secondItem="PCt-iY-zcA" secondAttribute="width" id="mid-wm-OyJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="mbp-q2-uOD" secondAttribute="trailing" id="sIn-tU-bL6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PCt-iY-zcA" secondAttribute="trailing" constant="20" id="gyS-u6-DdE"/>
+                            <constraint firstItem="PCt-iY-zcA" firstAttribute="leading" secondItem="7Or-0R-Tia" secondAttribute="leading" constant="20" id="p1g-JN-7GX"/>
+                            <constraint firstAttribute="bottom" secondItem="PCt-iY-zcA" secondAttribute="bottom" id="sya-rW-546"/>
+                            <constraint firstItem="PCt-iY-zcA" firstAttribute="top" secondItem="7Or-0R-Tia" secondAttribute="top" id="xSa-Ma-1rA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw2-Xx-Aqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="487"/>
+        </scene>
+    </scenes>
+</document>

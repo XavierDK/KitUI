@@ -133,7 +133,7 @@
                                 <rect key="frame" x="20" y="0.0" width="335" height="579"/>
                                 <subviews>
                                     <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mbp-q2-uOD">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="751"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="891"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Xib" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-DW-maY">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
@@ -155,8 +155,9 @@
                                                         <state key="normal" title="Medium Blue"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="type">
-                                                                <integer key="value" value="2"/>
+                                                                <integer key="value" value="0"/>
                                                             </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                 </subviews>
@@ -354,6 +355,48 @@
                                                     <constraint firstItem="scK-5a-JBG" firstAttribute="centerX" secondItem="kVX-C3-PQZ" secondAttribute="centerX" id="ZKZ-42-pL1"/>
                                                     <constraint firstAttribute="height" constant="60" id="mHw-E0-J1L"/>
                                                     <constraint firstItem="scK-5a-JBG" firstAttribute="centerY" secondItem="kVX-C3-PQZ" secondAttribute="centerY" id="qDK-y3-6oM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slR-CH-Ca4">
+                                                <rect key="frame" x="0.0" y="761" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w86-kH-7Be" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="107.5" y="10" width="120" height="40"/>
+                                                        <state key="normal" title="Medium Link"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="C5v-8R-V13"/>
+                                                    <constraint firstItem="w86-kH-7Be" firstAttribute="centerY" secondItem="slR-CH-Ca4" secondAttribute="centerY" id="tXj-H9-jl4"/>
+                                                    <constraint firstItem="w86-kH-7Be" firstAttribute="centerX" secondItem="slR-CH-Ca4" secondAttribute="centerX" id="ugV-y7-dYy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdr-B3-pqv">
+                                                <rect key="frame" x="0.0" y="831" width="335" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxb-aY-g8C" customClass="MediumButton" customModule="KitUI">
+                                                        <rect key="frame" x="76" y="10" width="183" height="40"/>
+                                                        <state key="normal" title="Medium Link Disabled"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                                <integer key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="57t-Kp-AOG"/>
+                                                    <constraint firstItem="Fxb-aY-g8C" firstAttribute="centerY" secondItem="cdr-B3-pqv" secondAttribute="centerY" id="RvO-hb-SsK"/>
+                                                    <constraint firstItem="Fxb-aY-g8C" firstAttribute="centerX" secondItem="cdr-B3-pqv" secondAttribute="centerX" id="pbz-Hj-Gp9"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

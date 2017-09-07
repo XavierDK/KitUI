@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2578754D1F60343C00A76F62 /* KitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257875431F60343C00A76F62 /* KitUI.framework */; };
-		257875521F60343C00A76F62 /* KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875511F60343C00A76F62 /* KitUITests.swift */; };
 		257875541F60343C00A76F62 /* KitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 257875461F60343C00A76F62 /* KitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		257875641F60345A00A76F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875631F60345A00A76F62 /* AppDelegate.swift */; };
 		2578756B1F60345A00A76F62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2578756A1F60345A00A76F62 /* Assets.xcassets */; };
@@ -19,9 +18,16 @@
 		257875801F60386F00A76F62 /* ButtonsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2578757F1F60386F00A76F62 /* ButtonsViewController.storyboard */; };
 		257875821F603E4D00A76F62 /* ButtonsByCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875811F603E4D00A76F62 /* ButtonsByCodeViewController.swift */; };
 		257875851F60416300A76F62 /* MediumButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875841F60416300A76F62 /* MediumButton.swift */; };
-		257875871F60520500A76F62 /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875861F60520500A76F62 /* BasicButton.swift */; };
 		257875881F61479300A76F62 /* KitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257875431F60343C00A76F62 /* KitUI.framework */; };
 		257875891F61479300A76F62 /* KitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 257875431F60343C00A76F62 /* KitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2578758E1F616AD500A76F62 /* KitUI_Medium_Blue_Design_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578758D1F616AD500A76F62 /* KitUI_Medium_Blue_Design_Tests.swift */; };
+		257875911F616CC500A76F62 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875901F616CC500A76F62 /* Colors.swift */; };
+		257875931F617DE300A76F62 /* MediumButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875921F617DE300A76F62 /* MediumButtonType.swift */; };
+		257875951F61856E00A76F62 /* KitUIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875941F61856E00A76F62 /* KitUIBase.swift */; };
+		257875971F61865600A76F62 /* KitUI_Medium_White_Design_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875961F61865600A76F62 /* KitUI_Medium_White_Design_Tests.swift */; };
+		257875991F618D4600A76F62 /* KitUI_Medium_Border_Blue_Design_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257875981F618D4600A76F62 /* KitUI_Medium_Border_Blue_Design_Tests.swift */; };
+		2578759B1F619BA600A76F62 /* KitUI_Medium_Border_White_Design_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578759A1F619BA600A76F62 /* KitUI_Medium_Border_White_Design_Tests.swift */; };
+		2578759D1F61A53500A76F62 /* ButtonsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578759C1F61A53500A76F62 /* ButtonsError.swift */; };
 		2FC45BF71B789395A4BF4F23 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FE9EAA44E91F2027D51A67 /* Pods_Demo.framework */; };
 		8CC3F35B411E91B9697E61D2 /* Pods_KitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0503DD91591BF83AB8884124 /* Pods_KitUI.framework */; };
 		8FDEF4632EB222241AF7D3E4 /* Pods_KitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B7F5F25466E5843799C8A0 /* Pods_KitUITests.framework */; };
@@ -65,7 +71,6 @@
 		257875461F60343C00A76F62 /* KitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitUI.h; sourceTree = "<group>"; };
 		257875471F60343C00A76F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2578754C1F60343C00A76F62 /* KitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		257875511F60343C00A76F62 /* KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitUITests.swift; sourceTree = "<group>"; };
 		257875531F60343C00A76F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257875611F60345A00A76F62 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257875631F60345A00A76F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +83,14 @@
 		2578757F1F60386F00A76F62 /* ButtonsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ButtonsViewController.storyboard; path = ViewControllers/ButtonsViewController.storyboard; sourceTree = "<group>"; };
 		257875811F603E4D00A76F62 /* ButtonsByCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonsByCodeViewController.swift; path = ViewControllers/ButtonsByCodeViewController.swift; sourceTree = "<group>"; };
 		257875841F60416300A76F62 /* MediumButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediumButton.swift; path = Buttons/MediumButton.swift; sourceTree = "<group>"; };
-		257875861F60520500A76F62 /* BasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicButton.swift; path = Buttons/BasicButton.swift; sourceTree = "<group>"; };
+		2578758D1F616AD500A76F62 /* KitUI_Medium_Blue_Design_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitUI_Medium_Blue_Design_Tests.swift; sourceTree = "<group>"; };
+		257875901F616CC500A76F62 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Colors/Colors.swift; sourceTree = "<group>"; };
+		257875921F617DE300A76F62 /* MediumButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediumButtonType.swift; path = Buttons/MediumButtonType.swift; sourceTree = "<group>"; };
+		257875941F61856E00A76F62 /* KitUIBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitUIBase.swift; sourceTree = "<group>"; };
+		257875961F61865600A76F62 /* KitUI_Medium_White_Design_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitUI_Medium_White_Design_Tests.swift; sourceTree = "<group>"; };
+		257875981F618D4600A76F62 /* KitUI_Medium_Border_Blue_Design_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitUI_Medium_Border_Blue_Design_Tests.swift; sourceTree = "<group>"; };
+		2578759A1F619BA600A76F62 /* KitUI_Medium_Border_White_Design_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitUI_Medium_Border_White_Design_Tests.swift; sourceTree = "<group>"; };
+		2578759C1F61A53500A76F62 /* ButtonsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonsError.swift; path = Buttons/ButtonsError.swift; sourceTree = "<group>"; };
 		2F1A07A61624180BC469B6EA /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		2F8CADBC75004BAC4097053D /* Pods-KitUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-KitUI/Pods-KitUI.release.xcconfig"; sourceTree = "<group>"; };
 		34B7F5F25466E5843799C8A0 /* Pods_KitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +157,7 @@
 			children = (
 				257875461F60343C00A76F62 /* KitUI.h */,
 				257875471F60343C00A76F62 /* Info.plist */,
+				2578758F1F616CB500A76F62 /* Colors */,
 				257875831F60414A00A76F62 /* Buttons */,
 			);
 			path = KitUI;
@@ -153,8 +166,12 @@
 		257875501F60343C00A76F62 /* KitUITests */ = {
 			isa = PBXGroup;
 			children = (
-				257875511F60343C00A76F62 /* KitUITests.swift */,
+				2578758D1F616AD500A76F62 /* KitUI_Medium_Blue_Design_Tests.swift */,
+				257875961F61865600A76F62 /* KitUI_Medium_White_Design_Tests.swift */,
+				257875981F618D4600A76F62 /* KitUI_Medium_Border_Blue_Design_Tests.swift */,
+				2578759A1F619BA600A76F62 /* KitUI_Medium_Border_White_Design_Tests.swift */,
 				257875531F60343C00A76F62 /* Info.plist */,
+				257875941F61856E00A76F62 /* KitUIBase.swift */,
 			);
 			path = KitUITests;
 			sourceTree = "<group>";
@@ -202,10 +219,19 @@
 		257875831F60414A00A76F62 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				257875861F60520500A76F62 /* BasicButton.swift */,
 				257875841F60416300A76F62 /* MediumButton.swift */,
+				257875921F617DE300A76F62 /* MediumButtonType.swift */,
+				2578759C1F61A53500A76F62 /* ButtonsError.swift */,
 			);
 			name = Buttons;
+			sourceTree = "<group>";
+		};
+		2578758F1F616CB500A76F62 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				257875901F616CC500A76F62 /* Colors.swift */,
+			);
+			name = Colors;
 			sourceTree = "<group>";
 		};
 		9968C8FB8C225C1E6F1823B4 /* Frameworks */ = {
@@ -536,8 +562,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257875871F60520500A76F62 /* BasicButton.swift in Sources */,
+				257875931F617DE300A76F62 /* MediumButtonType.swift in Sources */,
+				257875911F616CC500A76F62 /* Colors.swift in Sources */,
 				257875851F60416300A76F62 /* MediumButton.swift in Sources */,
+				2578759D1F61A53500A76F62 /* ButtonsError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +573,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257875521F60343C00A76F62 /* KitUITests.swift in Sources */,
+				257875951F61856E00A76F62 /* KitUIBase.swift in Sources */,
+				2578759B1F619BA600A76F62 /* KitUI_Medium_Border_White_Design_Tests.swift in Sources */,
+				2578758E1F616AD500A76F62 /* KitUI_Medium_Blue_Design_Tests.swift in Sources */,
+				257875971F61865600A76F62 /* KitUI_Medium_White_Design_Tests.swift in Sources */,
+				257875991F618D4600A76F62 /* KitUI_Medium_Border_Blue_Design_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
